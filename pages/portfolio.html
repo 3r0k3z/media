@@ -1,31 +1,46 @@
 <section class="section">
     <article class="article">
         <h1 class="heading primary">Portfolio</h1>
-        <h2 class="heading secondary">Few (most interesting) production examples</h2>
+        <p class="paragraph">
+            <a class="link" href="https://gitlab.com/ntlx-software/tonyxxx/-/tree/master" target="_blank">The craft project</a> - most interesting of my works.<br>
+            Represents an operating system implemented on front-end. 
+            See the sources in src/ directory.
+        </p>
+        <p class="paragraph">
+            Originated as an experimental project driven by a research interest in implementing an operating system based on the state machine concept and the reactive programming paradigm, while strictly adhering to a component-based approach and the layer segregation used in web dev: logic, presentation, data.
+        </p>
+        <p class="paragraph">
+            The system includes state dispatcher (acting as a kernel), file system, and GUI.
+        </p>
+        <p class="paragraph">The kernel transforms programmatic and user actions + current state data into input for the next state of components.</p>
+        <p class="paragraph">The file system is implemented as a tree-like structure with extended functionality, built around the philosophy that “everything is a data node”. A node can be associated with content of any type, will it be text, or remote resource, or another node.</p>
+        <p class="paragraph">The GUI is inspired by MS Windows and includes desktop, taskbar, navigator, and window system. It provides the following capabilities:</p>
         <ul class="list">
-            <li class="list-item">
-                <a class="link" href="https://www.mifcom.de/" target="_blank">MifCom</a> - Computer shop with the powerful configurator where the users can buy preset assemblies or compose custom device from the desired components and based on the target parameters
-            </li>
-            <li class="list-item">
-                <a class="link" href="https://www.1stopbedrooms.com/" target="_blank">1StopBedrooms</a> - Furniture store with the variety of products, catalogs, brands, options, services and configs
-            </li>
-            <li class="list-item">
-                <a class="link" href="https://www.juniqe.com/" target="_blank">Junique</a> - Art platform where painters can propose their production, and customers can order wall arts or things with prints
-            </li>
+            <li class="list-item collection-item bullet">Displaying the file system structure in the navigator</li>
+            <li class="list-item collection-item bullet">Displaying shortcuts to selected data nodes on the desktop</li>
+            <li class="list-item collection-item bullet">Rendering data nodes within windows</li>
+            <li class="list-item collection-item bullet">Opening windows via desktop shortcuts, in-window content shortcuts, navigation links, or API calls</li>
+            <li class="list-item collection-item bullet">Equipping windows with functionality such as: open, close, focus, move, resize, switch to preset state (fullscreen, float, full-left, full-right, collapsed)</li>
+            <li class="list-item collection-item bullet">Control window state via title bar controls, taskbar icons, and by snapping windows to screen edges (left, right, top, bottom)</li>
+            <li class="list-item collection-item bullet">Moving windows by dragging the title bar</li>
+            <li class="list-item collection-item bullet">Resizing windows by dragging window borders</li>
+            <li class="list-item collection-item bullet">Maximizing/restoring windows via double-click on the title bar</li>
+            <li class="list-item collection-item bullet">Collapsing/restoring all open windows via a taskbar action</li>
         </ul>
+        <p class="paragraph">Display and behaviour parameters are fully configurable.</p>
+        <p class="paragraph">The project is under continuous development as time allow and new ideas income.</p>
+        <p class="paragraph">The practical example of the system in use is <a class="link" href="https://3r0k3z.github.io/tonyxxx-dist/" target="_blank">my online CV</a> that is completely implemented on this engine.</p>
     </article>
     <article class="article">
-        <h2 class="heading secondary">The hobby project</h2>
+        <h2 class="heading secondary text-light">Additionally, examples of commercial works that are in production, publicly accessible, and permissible to share under NDA:</h2>
         <p class="paragraph">
-            It represents a window-based GUI + filesystem on frontend.<br>
-            The site you see is built on this engine.<br>
-            <a class="link" href="https://github.com/tony-reason/tonyxx/" target="_blank">Sources on GitHub</a><br>
-            The idea is:<br>
-            a) implement a windowed user interface on the front-end, and equip it with features similar to Windows 10;<br>
-            b) provide the application with a data server equipped with an abstract filesystem, functionality to operate the data tree, and API for the actions on data;<br>
-            c) rganize the engine in a form of finite state machine.<br>
-            Made it for fun - just was interested in such engineering challenge as "implement Windows on React".<br>
-            Ecosystem: React, RTK, TS, SCSS, ViteJS.
+            <a class="link" href="https://www.1stopbedrooms.com/" target="_blank">1StopBedrooms</a> - furniture and accessories store. The project is notable for a lot of non-ordinary functionality, complex internal logic, and sophisticated data structures.
+        </p>
+        <p class="paragraph">
+            <a class="link" href="https://www.mifcom.de/" target="_blank">MifCom</a>MifCom - computer store. Features a powerful configurator that allows users to build custom assemblies based on desired technical specifications and target budget.
+        </p>
+        <p class="paragraph">
+            <a class="link" href="https://www.juniqe.com/" target="_blank">Junique</a> - art platform. There artists can showcase their works, and users can order prints of the artworks.
         </p>
     </article>
 </section>
